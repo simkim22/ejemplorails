@@ -18,8 +18,3 @@ test:
   username: simkim22
   password: igualeja
     
-production:
-  <<: *default
-  database: sampleapp_production
-  username: simkim22
-  password: igualeja
