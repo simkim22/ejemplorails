@@ -20,6 +20,7 @@ gem 'rspec-rails', '2.13.1'
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
+  gem 'factory_girl_rails', '4.2.0'
 end
 
 # Use jquery as the JavaScript library
