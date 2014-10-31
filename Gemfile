@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 gem 'faker',                '1.4.2'
 
-gem 'rspec-rails', '2.13.1'
+
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
