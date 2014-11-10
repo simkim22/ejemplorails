@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create!(name:  "Example User",
-             email: "juanace@hotmai3l.com",
+User.create!(name:  "Alberto Acevedo",
+             email: "simkim_22@hotmail.com",
              password:              "barcelona",
              password_confirmation: "barcelona",
              admin: true,
@@ -31,3 +31,11 @@ users = User.order(:created_at).take(6)
   content = Faker::Lorem.sentence(5)
   users.each { |user| user.microposts.create!(content: content) }
 end
+
+# Following relationships
+users = User.all
+user  = users.first
+following = users[2..50]
+followers = users[3..40]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }

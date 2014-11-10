@@ -4,6 +4,7 @@
 
 $grayMediumLight: #eaeaea;
 $gray-light: #777;
+$gray-lighter: #777;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -137,6 +138,34 @@ aside {
   float: left;
   margin-right: 10px;
 }
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
 
 /* forms */
 
